@@ -5,6 +5,7 @@ import AppShell from "./layouts/AppShell";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
+import Registros from "./pages/Registros";
 import NotFound from "./pages/NotFound";
 
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -27,6 +28,15 @@ export default function App() {
           element={
             <ProtectedRoute>
               <Events />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/registros"
+          element={
+            <ProtectedRoute>
+              <Registros />
             </ProtectedRoute>
           }
         />
