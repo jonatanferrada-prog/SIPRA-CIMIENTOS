@@ -14,13 +14,15 @@ export default function AppShell() {
         </div>
 
         <nav style={styles.nav}>
-          <Link to="/" style={styles.link}>Inicio</Link>
-          {user ? (
-            <button onClick={signOut} style={styles.button}>Salir</button>
-          ) : (
-            <Link to="/login" style={styles.link}>Ingresar</Link>
-          )}
-        </nav>
+  <Link to="/" style={styles.link}>Inicio</Link>
+  <Link to="/events" style={styles.link}>Eventos</Link>
+
+  {user ? (
+    <button onClick={signOut} style={styles.button}>Salir</button>
+  ) : (
+    <Link to="/login" style={styles.link}>Ingresar</Link>
+  )}
+</nav>
       </header>
 
       <main style={styles.main}>
