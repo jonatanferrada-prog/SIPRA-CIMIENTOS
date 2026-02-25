@@ -14,7 +14,7 @@ export default function AppShell() {
         </div>
 
         <nav style={styles.nav}>
-  <Link to="/" style={styles.link}>Inicio</Link>
+  <Link to="/" style={styles.link}>Inicio</Link><Link to="/registros" style={styles.link}>Registros</Link>
   <Link to="/events" style={styles.link}>Eventos</Link>
 
   {user ? (
